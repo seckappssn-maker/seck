@@ -197,6 +197,13 @@ a{color:inherit}
 .tphone{--c:var(--tphone);--c2:var(--tphone-2)}
 .sphoto{--c:var(--sphoto);--c2:var(--sphoto-2)}
 .file{--c:var(--file);--c2:var(--file-2)}
+.metiers{border:1.5px solid var(--line);border-radius:16px;padding:12px;background:color-mix(in srgb,var(--c) 5%,white)}
+.metiers .mt{margin:0 0 10px;font-weight:800;font-size:15px;color:var(--c)}
+.mg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.met{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:9px 10px;min-width:0;line-height:1.25}
+.met span{font-size:17px;margin-right:5px}
+.met b{font-size:15px;line-height:1.2}
+.met small{display:block;margin-top:3px;font-size:13px;color:var(--muted);line-height:1.3}
 .app:nth-child(even){grid-template-columns:.95fr 1.05fr}
 .app:nth-child(even) .side{order:2}
 @media (max-width:820px){
@@ -378,7 +385,7 @@ footer b{color:var(--ink)}
     <article class="app boutique" id="boutique">
       <div class="side">
         <div class="tagline"><span class="badge">Le plus demandé</span></div>
-        <p class="for">Pour boutiques, alimentation, quincailleries, tout commerce</p>
+        <p class="for">Pour alimentation, quincaillerie, vêtements, cosmétiques, pharmacie, artisans… tout commerce</p>
         <h3>Carnet Boutique</h3>
         <p class="pitch">Le cahier de la boutique, mais qui calcule tout seul et ne se perd jamais.</p>
         <div class="phone-wrap"><div class="ph"><div class="scr"><div class="bar">Nouvelle vente <small>Wolof</small></div><div class="in">
@@ -390,12 +397,22 @@ footer b{color:var(--ink)}
           <div class="tot"><span>Total</span><span>2 650 F</span></div></div></div></div></div>
       </div>
       <div class="main">
+        <div class="metiers"><p class="mt">Choisissez votre métier : l'app montre seulement ce qu'il vous faut</p>
+          <div class="mg">
+            <div class="met"><span>🛒</span><b>Alimentation</b><small>Carton, prix gros, péremption, code-barres</small></div>
+            <div class="met"><span>🔩</span><b>Quincaillerie</b><small>Au sac, au mètre, au kg · facture et devis A4</small></div>
+            <div class="met"><span>👗</span><b>Mode, tissus</b><small>Tailles, couleurs, tissu au mètre, livraisons</small></div>
+            <div class="met"><span>💄</span><b>Cosmétiques</b><small>Parfums, péremption, boutique en ligne, livraisons</small></div>
+            <div class="met"><span>💊</span><b>Pharmacie</b><small>Péremption, alerte stock bas, code-barres</small></div>
+            <div class="met"><span>🛠</span><b>Artisan sur commande</b><small>Devis, acompte, vos réalisations en photos</small></div>
+          </div></div>
         <ul class="feat">
           <li><span><b>Ventes</b> notées en un geste, même les bonbons à la pièce</span></li>
           <li><span><b>Carnet des dettes</b> : qui doit combien, depuis quand, rappel WhatsApp</span></li>
           <li><span><b>Stock</b> : ce qui reste et ce qu'il faut racheter</span></li>
           <li><span><b>Boutique en ligne</b> : votre lien avec photos et prix, la commande arrive dans l'app, votre téléphone sonne et le client suit sa commande</span></li>
-          <li><span><b>Mode caisse</b> pour tablette et POS Android</span></li>
+          <li><span><b>Mode caisse</b> pour tablette et POS Android, <b>code-barres</b> avec la caméra ou un lecteur Bluetooth</span></li>
+          <li><span><b>Plusieurs activités</b> avec le même numéro (petit supplément par activité)</span></li>
           <li><span><b>Ticket 58 mm</b> avec QR Wave, et étiquettes prix</span></li>
           <li><span>Prix lu à haute voix, gros boutons, bouton <b>wolof</b></span></li>
           <li><span>S'ouvre même <b>sans internet</b></span></li>
@@ -610,7 +627,7 @@ footer b{color:var(--ink)}
       <details><summary>Que se passe-t-il si je ne paie pas ?</summary><p>Après la date de fin, vous avez 3 jours. Ensuite l'app se met en pause : vos données restent gardées et vous pouvez les regarder. Dès que vous payez, tout repart.</p></details>
       <details><summary>Je peux arrêter quand je veux ?</summary><p>Oui. Vous payez mois par mois, sans contrat. Vous arrêtez quand vous voulez.</p></details>
       <details><summary>Mes clients peuvent-ils réserver ou commander en ligne ?</summary><p>Oui. Carnet Boutique, Teranga Resto, Teranga Navette, Studio Photo et Teranga File donnent une page ou un QR code à vos clients : ils voient vos photos et vos prix, réservent ou commandent, et vous recevez tout dans l'app.</p></details>
-      <details><summary>J'ai deux boutiques ou deux restaurants.</summary><p>Chaque boutique ou restaurant a son propre abonnement. Écrivez-nous, on vous aide à tout mettre en place.</p></details>
+      <details><summary>J'ai deux boutiques ou deux restaurants.</summary><p>Avec Carnet Boutique, vous ajoutez une autre activité avec le même numéro, pour un petit supplément. Pour Teranga Resto, chaque restaurant a son propre abonnement. Écrivez-nous, on vous aide à tout mettre en place.</p></details>
     </div>
   </section>
 
