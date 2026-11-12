@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0B6E5B">
-<meta name="description" content="Carnet Boutique, Teranga Resto, Teranga Navette, Studio Photo et Teranga File : 5 applications simples pour gérer votre business au Sénégal. 7 jours d&#x27;essai gratuit.">
-<meta property="og:title" content="Seck Apps — 5 applications pour votre business">
-<meta property="og:description" content="Boutique + boutique en ligne, restaurant, navette, studio photo, file d&#x27;attente. Dès 5 000 F/mois. 7 jours d&#x27;essai gratuit. Wave et Orange Money.">
-<meta property="og:image" content="https://seckappssn-maker.github.io/seck/copertina.png">
+<meta name="description" content="Carnet Boutique, Teranga Resto, Teranga Navette, Teranga Shop, Teranga Livraison, Studio Photo et Teranga File : 7 applications simples pour gérer votre business au Sénégal. 7 jours d&#x27;essai gratuit.">
+<meta property="og:title" content="Seck Apps — 7 applications pour votre business">
+<meta property="og:description" content="Boutique, restaurant, navette, vente en ligne, livraison à moto, studio photo, file d&#x27;attente. Dès 5 000 F/mois. 7 jours d&#x27;essai gratuit. Wave et Orange Money.">
+<meta property="og:image" content="https://seckappssn-maker.github.io/seck/copertina.png?v=7">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://seckappssn-maker.github.io/seck/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<title>Seck Apps · 5 applications</title>
+<title>Seck Apps · 7 applications</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap">
 <style>
@@ -33,6 +33,8 @@
   --tphone:#0B6B6E;   --tphone-2:#F28C28;
   --sphoto:#8A2D3B;   --sphoto-2:#E8B04B;
   --file:#3B2FB0;     --file-2:#B9B2FF;
+  --shop:#183A78;     --shop-2:#9CC3FF;
+  --livraison:#0E2A57; --livraison-2:#FFC72C;
   --abo:#1F3A5F; --abo-2:#7FC8F8; --asso:#0B6E4F; --asso-2:#E8B04B;
   --display:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;
   --body:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
@@ -197,6 +199,8 @@ a{color:inherit}
 .tphone{--c:var(--tphone);--c2:var(--tphone-2)}
 .sphoto{--c:var(--sphoto);--c2:var(--sphoto-2)}
 .file{--c:var(--file);--c2:var(--file-2)}
+.shop{--c:var(--shop);--c2:var(--shop-2)}
+.livraison{--c:var(--livraison);--c2:var(--livraison-2)}
 .vbtn{display:flex;align-items:center;gap:12px;width:100%;margin:6px 0 4px;position:relative;z-index:2;border:0;border-radius:16px;padding:8px 12px 8px 8px;background:rgba(255,255,255,.16);color:#fff;text-align:left;cursor:pointer;font:inherit}
 .vbtn img{width:54px;height:96px;object-fit:cover;border-radius:10px;flex:none;background:rgba(0,0,0,.2)}
 .vbtn b{display:block;font-size:19px}
@@ -338,11 +342,21 @@ footer b{color:var(--ink)}
 .qa b{font-family:var(--display);font-size:clamp(20px,4.6vw,26px);line-height:1.05}
 .qa span.d{font-size:14px;color:rgba(255,255,255,.88);position:relative;z-index:1}
 .qa .go{margin-top:auto;font-weight:800;font-size:14px;position:relative;z-index:1}
-@media (min-width:821px){.quad{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media (min-width:821px){.quad{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .quad .qa:last-child:nth-child(odd){grid-column:1/-1;min-height:140px}
 @media (min-width:821px){.quad .qa:last-child:nth-child(odd){grid-column:auto;min-height:170px}}
 .howto[open]>summary{color:var(--c)}
 .app .howto{border-width:2px}
+/* Vitrine 7 apps : éventail à 7 téléphones */
+.hero7 .fan .ph{width:128px;margin-inline:-20px}
+.hero7 .fan .ph:nth-child(1){transform:rotate(-21deg) translateY(66px);z-index:1}
+.hero7 .fan .ph:nth-child(2){transform:rotate(-14deg) translateY(30px);z-index:2}
+.hero7 .fan .ph:nth-child(3){transform:rotate(-7deg) translateY(8px);z-index:3}
+.hero7 .fan .ph:nth-child(4){transform:rotate(0deg) translateY(0);z-index:5}
+.hero7 .fan .ph:nth-child(5){transform:rotate(7deg) translateY(8px);z-index:3}
+.hero7 .fan .ph:nth-child(6){transform:rotate(14deg) translateY(30px);z-index:2}
+.hero7 .fan .ph:nth-child(7){transform:rotate(21deg) translateY(66px);z-index:1}
+@media (max-width:520px){.hero7 .fan{height:180px}.hero7 .fan .ph{width:72px;margin-inline:-14px}}
 </style>
 </head>
 <body>
@@ -353,15 +367,15 @@ footer b{color:var(--ink)}
   </div>
 </header>
 
-<section class="hero hero4" id="top">
+<section class="hero hero4 hero7" id="top">
   <div class="wrap">
     <span class="eyebrow">Seck Apps · Fait au Sénégal</span>
-    <h1>5 applications<br><em>pour faire grandir votre business.</em></h1>
-    <p class="lead">Une boutique, un restaurant, une navette, un studio photo, ou des clients qui attendent leur tour ? Choisissez votre application : tout est noté, calculé et sauvegardé en ligne. Vos clients peuvent commander ou réserver depuis votre lien.</p>
+    <h1>7 applications<br><em>pour faire grandir votre business.</em></h1>
+    <p class="lead">Une boutique, un restaurant, une navette, une vente en ligne, des livraisons à moto, un studio photo, ou des clients qui attendent leur tour ? Choisissez votre application : tout est noté, calculé et sauvegardé en ligne. Vos clients peuvent commander ou réserver depuis votre lien.</p>
     <div class="facts"><span>7 jours gratuits</span><span>Dès 5 000 F / mois</span><span>Wave · Orange Money</span><span>Français · Wolof</span></div>
     <div class="btns">
       <a class="btn btn-gold" data-msg="Bonjour Seck Apps, je veux essayer une application 7 jours gratuits." href="#"><svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.6-.1 1.2z"/></svg>Essayer gratuitement</a>
-      <a class="btn btn-line" href="#apps">Voir les 5 applications</a>
+      <a class="btn btn-line" href="#apps">Voir les 7 applications</a>
     </div>
     <div class="fan" aria-hidden="true">
       <div class="ph boutique"><div class="scr"><div class="bar">Carnet Boutique</div><div class="in">
@@ -374,6 +388,12 @@ footer b{color:var(--ink)}
         <div class="row"><span>Touba → Dakar</span><b>06:00</b></div>
         <div class="seats"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="f"></i><i></i><i class="f"></i><i class="f"></i><i class="f"></i></div>
         <div class="tot"><span>Places</span><span>4 libres</span></div></div></div></div>
+      <div class="ph shop"><div class="scr"><div class="bar">Teranga Shop</div><div class="in">
+        <div class="row"><span>#1048 TikTok</span><b>23 500</b></div><div class="row"><span>Live</span><span class="pill">Wave</span></div><div class="row"><span>Rufisque</span><b>Groupée</b></div>
+        <div class="tot"><span>Bénéfice</span><span>49 500</span></div></div></div></div>
+      <div class="ph livraison"><div class="scr"><div class="bar">Teranga Livraison</div><div class="in">
+        <div class="row"><span>N° 1008 Colis</span><b>Modou</b></div><div class="row"><span>Moto-taxi</span><b>500</b></div><div class="row"><span>🎤 Vocal</span><span class="pill">GPS</span></div>
+        <div class="tot"><span>Patron</span><span>5 700 F</span></div></div></div></div>
       <div class="ph sphoto"><div class="scr"><div class="bar">Studio Photo</div><div class="in">
         <div class="row"><span>Mariage Fatou</span><span class="ok">Livré</span></div><div class="row"><span>Baptême Diop</span><span class="pill">Photos</span></div><div class="row"><span>Magal</span><b>J-12</b></div>
         <div class="tot"><span>Photos</span><span>240</span></div></div></div></div>
@@ -386,7 +406,7 @@ footer b{color:var(--ink)}
 
 <main class="wrap">
 
-  <section class="pick" id="apps"><span class="eyebrow" style="color:var(--brand)">Nos applications</span><h2>Laquelle est faite pour vous ?</h2><nav class="quad" aria-label="Applications"><a class="qa boutique" href="#boutique"><span class="k">Commerce</span><b>Carnet Boutique</b><span class="d">Ventes, crédits, stock et votre boutique en ligne.</span><span class="go">Tout voir ↓</span></a><a class="qa resto" href="#resto"><span class="k">Restauration</span><b>Teranga Resto</b><span class="d">Caisse rapide, cuisine, livraisons et votre menu en ligne.</span><span class="go">Tout voir ↓</span></a><a class="qa navette" href="#navette"><span class="k">Transport</span><b>Teranga Navette</b><span class="d">Départs pleins, réservations en ligne et itinéraire GPS.</span><span class="go">Tout voir ↓</span></a><a class="qa sphoto" href="#sphoto"><span class="k">Photographe</span><b>Studio Photo</b><span class="d">Séances, acomptes, et des photos livrées en bonne qualité.</span><span class="go">Tout voir ↓</span></a><a class="qa file" href="#file"><span class="k">Banque · Clinique</span><b>Teranga File</b><span class="d">Fini la foule au guichet : un numéro, l'écran TV l'appelle.</span><span class="go">Tout voir ↓</span></a></nav></section>
+  <section class="pick" id="apps"><span class="eyebrow" style="color:var(--brand)">Nos applications</span><h2>Laquelle est faite pour vous ?</h2><nav class="quad" aria-label="Applications"><a class="qa boutique" href="#boutique"><span class="k">Commerce</span><b>Carnet Boutique</b><span class="d">Ventes, crédits, stock et votre boutique en ligne.</span><span class="go">Tout voir ↓</span></a><a class="qa resto" href="#resto"><span class="k">Restauration</span><b>Teranga Resto</b><span class="d">Caisse rapide, cuisine, livraisons et votre menu en ligne.</span><span class="go">Tout voir ↓</span></a><a class="qa navette" href="#navette"><span class="k">Transport</span><b>Teranga Navette</b><span class="d">Départs pleins, réservations en ligne et itinéraire GPS.</span><span class="go">Tout voir ↓</span></a><a class="qa shop" href="#shop"><span class="k">Vente en ligne</span><b>Teranga Shop</b><span class="d">TikTok, Instagram, WhatsApp : commandes, lives et livreurs.</span><span class="go">Tout voir ↓</span></a><a class="qa livraison" href="#livraison"><span class="k">Livraison à moto</span><b>Teranga Livraison</b><span class="d">Courses, livreurs, caisse du soir et motos. Même par vocal.</span><span class="go">Tout voir ↓</span></a><a class="qa sphoto" href="#sphoto"><span class="k">Photographe</span><b>Studio Photo</b><span class="d">Séances, acomptes, et des photos livrées en bonne qualité.</span><span class="go">Tout voir ↓</span></a><a class="qa file" href="#file"><span class="k">Banque · Clinique</span><b>Teranga File</b><span class="d">Fini la foule au guichet : un numéro, l'écran TV l'appelle.</span><span class="go">Tout voir ↓</span></a></nav></section>
 
   <div class="apps">
 
@@ -525,6 +545,87 @@ footer b{color:var(--ink)}
       </div>
     </article>
 
+    <!-- TERANGA SHOP -->
+    <article class="app shop" id="shop">
+      <div class="side">
+        <div class="tagline"><span class="badge">Nouveau</span></div>
+        <p class="for">Pour ceux qui vendent sur TikTok, Instagram, Facebook et WhatsApp</p>
+        <h3>Teranga Shop</h3>
+        <p class="pitch">Vos commandes en ligne, vos lives et vos livreurs dans une seule app. Vos clients commandent avec le lien de votre bio.</p>
+        <button type="button" class="vbtn" data-vid="videos/video-shop.mp4" data-poster="videos/poster-shop.jpg"><img src="videos/poster-shop.jpg" alt="" loading="lazy" width="54" height="96"><span><b>▶ Voir la vidéo</b><small>Comment ça marche, étape par étape · 3 min</small></span></button>
+        <div class="phone-wrap"><div class="ph"><div class="scr"><div class="bar">Commandes <small>7 jours</small></div><div class="in">
+          <div class="row"><span>#1048 · TikTok · Fatou D.</span><b>23 500</b></div>
+          <div class="row"><span>#1047 · Live · Mame D.</span><span class="ok">Wave</span></div>
+          <div class="row"><span>#1052 · Boutique · Rufisque</span><span class="pill">Groupée</span></div>
+          <div class="row" style="background:#E2E9F6"><span>Chez Modou (livreur)</span><b>44 000</b></div>
+          <div class="tot"><span>Bénéfice</span><span>49 500 F</span></div></div></div></div></div>
+      </div>
+      <div class="main">
+        <ul class="feat">
+          <li><span><b>Toutes vos commandes</b> au même endroit : TikTok, Instagram, Facebook, WhatsApp et votre boutique</span></li>
+          <li><span><b>Boutique en ligne</b> : votre lien dans la bio, le client commande tout seul et suit sa commande</span></li>
+          <li><span><b>Mode Live</b> : fini les « je prends ». Les clients réservent avec le lien et paient l'acompte, sinon la réservation s'annule toute seule</span></li>
+          <li><span><b>Livreurs</b> : l'argent chez chaque livreur, et un espace livreur avec son code</span></li>
+          <li><span><b>Livraison groupée</b> pour les zones loin : Express, ou Groupée moins chère</span></li>
+          <li><span><b>Bénéfice</b> sur chaque article, et d'où viennent vos commandes</span></li>
+        </ul>
+        <div class="extra"><strong>Inclus :</strong><span>votre boutique en ligne et la page de réservation du live. Le client paie par Wave, Orange Money ou à la livraison.</span></div>
+        <details class="howto" open><summary>Tout ce que fait l'app</summary><div class="howin"><p class="ht">Comment ça marche</p><ol class="hsteps"><li>Ajoutez vos articles avec photos, prix d'achat et prix de vente.</li><li>Mettez le lien de votre boutique dans votre bio TikTok, Instagram et sur votre statut WhatsApp.</li><li>Le client commande : la commande arrive dans l'app et votre téléphone sonne.</li><li>Vous confirmez, vous choisissez le livreur, et vous voyez l'argent qu'il doit vous remettre.</li></ol><div class="hgroups"><div><p class="ht">Commandes</p><ul><li>TikTok, Instagram, Facebook, WhatsApp et boutique</li><li>Messages WhatsApp déjà écrits : confirmation, suivi, colis en route, merci</li><li>Retours notés</li></ul></div><div><p class="ht">Live</p><ul><li>Lien de réservation à mettre dans la bio</li><li>Acompte par Wave ou Orange Money</li><li>Sans paiement, la réservation s'annule toute seule</li><li>Liste d'attente quand c'est épuisé</li></ul></div><div><p class="ht">Livreurs</p><ul><li>Espace livreur avec son code</li><li>Argent à récupérer chez chaque livreur</li><li>Envoi possible à une société Teranga Livraison</li></ul></div><div><p class="ht">Argent</p><ul><li>Bénéfice sur chaque pièce</li><li>D'où viennent vos commandes</li><li>Clients fidèles à relancer sur WhatsApp</li></ul></div><div><p class="ht">Boutique en ligne</p><ul><li>Photos, tailles, couleurs, stock</li><li>Avis des clients</li><li>Arrivage : les clients sont prévenus</li><li>Express ou Groupée pour les zones loin</li></ul></div></div></div></details>
+        <div class="price"><div><span class="amount">5 000 F</span> <span class="per">/ mois</span></div>
+          <p class="year">Ou <b>50 000 F l'année</b> : 2 mois offerts</p></div>
+        <div class="btns">
+          <a class="btn btn-wa" data-msg="Bonjour, je veux essayer Teranga Shop 7 jours gratuits pour ma vente en ligne." href="#">Essayer 7 jours</a>
+          <a class="btn btn-line" href="https://seckappssn-maker.github.io/teranga-shop/" target="_blank" rel="noopener">Ouvrir l'app</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- TERANGA LIVRAISON -->
+    <article class="app livraison" id="livraison">
+      <div class="side">
+        <div class="tagline"><span class="badge">Nouveau</span></div>
+        <p class="for">Pour sociétés de livraison à moto, tiak-tiak et moto-taxi</p>
+        <h3>Teranga Livraison</h3>
+        <p class="pitch">Vos motos, vos livreurs et vos courses dans une seule app. Le client commande avec votre lien, même par vocal.</p>
+        <button type="button" class="vbtn" data-vid="videos/video-livraison.mp4" data-poster="videos/poster-livraison.jpg"><img src="videos/poster-livraison.jpg" alt="" loading="lazy" width="54" height="96"><span><b>▶ Voir la vidéo</b><small>Comment ça marche, étape par étape · 3 min</small></span></button>
+        <div class="phone-wrap"><div class="ph"><div class="scr"><div class="bar">Courses <small>Touba</small></div><div class="in">
+          <div class="row"><span>N° 1008 · Colis</span><span class="ok">Modou</span></div>
+          <div class="row"><span>N° 1007 · Moto-taxi</span><b>500</b></div>
+          <div class="row"><span>N° 1006 · 🎤 Vocal</span><span class="pill">GPS</span></div>
+          <div class="row" style="background:#FFF3CC"><span>À rendre · Boutique Awa</span><b>15 000</b></div>
+          <div class="tot"><span>Pour le patron</span><span>5 700 F</span></div></div></div></div></div>
+      </div>
+      <div class="main">
+        <ul class="feat">
+          <li><span><b>Courses</b> par téléphone, au dépôt ou avec <b>votre lien</b> : le client écrit ou envoie un <b>vocal</b>, avec sa position GPS</span></li>
+          <li><span><b>Livreurs avec code</b> : chacun voit ses courses. Je prends, Récupéré, Livré</span></li>
+          <li><span><b>Caisse du soir</b> : pourcentage, versement par jour ou salaire, l'app calcule ce que chacun doit verser</span></li>
+          <li><span><b>Argent des vendeurs</b> : la marchandise encaissée pour les boutiques TikTok, à leur rendre</span></li>
+          <li><span><b>Motos</b> : carburant, réparations et bénéfice de chaque moto</span></li>
+          <li><span><b>Plusieurs zones</b> avec un capo par zone, et un <b>code de livraison</b> pour plus de sécurité</span></li>
+        </ul>
+        <div class="extra"><strong>Inclus :</strong><span>votre page pour les clients : ils demandent une livraison ou un moto-taxi par écrit ou par vocal, et suivent leur course.</span></div>
+        <details class="howto" open><summary>Tout ce que fait l'app</summary><div class="howin"><p class="ht">Comment ça marche</p><ol class="hsteps"><li>Ajoutez vos zones, vos tarifs et vos livreurs : chacun reçoit son code.</li><li>Le client appelle, ou commande avec votre lien, même par vocal.</li><li>Vous envoyez la course à un livreur, ou le premier disponible la prend.</li><li>Le soir, la caisse montre ce que chaque livreur doit vous verser.</li></ol><div class="hgroups"><div><p class="ht">Courses</p><ul><li>Colis et transport de personnes</li><li>Téléphone, dépôt ou lien clients</li><li>Vocal et position GPS du client</li><li>Reçu envoyé au client sur WhatsApp</li></ul></div><div><p class="ht">Livreurs</p><ul><li>Un code pour chaque livreur et chaque capo de zone</li><li>Disponible ou occupé</li><li>Itinéraire sur la carte</li><li>Avis sur le téléphone à chaque nouvelle course</li></ul></div><div><p class="ht">Argent</p><ul><li>Caisse du jour par livreur</li><li>Pourcentage, versement par jour ou salaire</li><li>Argent à rendre aux vendeurs</li><li>Wave et Orange Money avec votre code QR</li></ul></div><div><p class="ht">Motos</p><ul><li>Dépenses : carburant, réparations</li><li>Bénéfice de chaque moto par mois</li></ul></div><div><p class="ht">Pratique</p><ul><li>Code de livraison à 4 chiffres</li><li>Reçoit les livraisons de Teranga Shop et Teranga Resto</li><li>Marche même avec un internet faible</li></ul></div></div></div></details>
+        <div class="price">
+          <div class="tiers">
+            <div class="tier"><div class="th"><span class="n">Essentiel</span><b>5 000 F</b><small>/ mois</small></div>
+              <ul><li>Jusqu'à <b>3 livreurs</b></li><li><b>1 zone</b></li><li>Toutes les fonctions de l'app</li></ul></div>
+            <div class="tier hi"><div class="th"><span class="n">Pro</span><b>10 000 F</b><small>/ mois</small></div>
+              <p class="plus">Tout l'Essentiel, plus :</p>
+              <ul><li>Jusqu'à <b>10 livreurs</b></li><li>Jusqu'à <b>3 zones</b>, avec un capo par zone</li></ul></div>
+            <div class="tier"><div class="th"><span class="n">Premium</span><b>15 000 F</b><small>/ mois</small></div>
+              <p class="plus">Tout le Pro, plus :</p>
+              <ul><li><b>Livreurs et zones sans limite</b></li></ul></div>
+          </div>
+          <p class="year">Prix par mois et par société. Les 3 formules ont toutes les fonctions : seul le nombre de livreurs et de zones change.</p>
+        </div>
+        <div class="btns">
+          <a class="btn btn-wa" data-msg="Bonjour, je veux essayer Teranga Livraison 7 jours gratuits pour ma société de livraison." href="#">Essayer 7 jours</a>
+          <a class="btn btn-line" href="https://seckappssn-maker.github.io/teranga-livraison/" target="_blank" rel="noopener">Ouvrir l'app</a>
+        </div>
+      </div>
+    </article>
+
     <!-- STUDIO PHOTO -->
     <article class="app sphoto" id="sphoto">
       <div class="side">
@@ -640,7 +741,7 @@ footer b{color:var(--ink)}
       <details><summary>Je ne lis pas bien le français.</summary><p>Les apps ont un bouton wolof et de grosses écritures. On vous explique aussi par vocal WhatsApp.</p></details>
       <details><summary>Que se passe-t-il si je ne paie pas ?</summary><p>Après la date de fin, vous avez 3 jours. Ensuite l'app se met en pause : vos données restent gardées et vous pouvez les regarder. Dès que vous payez, tout repart.</p></details>
       <details><summary>Je peux arrêter quand je veux ?</summary><p>Oui. Vous payez mois par mois, sans contrat. Vous arrêtez quand vous voulez.</p></details>
-      <details><summary>Mes clients peuvent-ils réserver ou commander en ligne ?</summary><p>Oui. Carnet Boutique, Teranga Resto, Teranga Navette, Studio Photo et Teranga File donnent une page ou un QR code à vos clients : ils voient vos photos et vos prix, réservent ou commandent, et vous recevez tout dans l'app.</p></details>
+      <details><summary>Mes clients peuvent-ils réserver ou commander en ligne ?</summary><p>Oui. Carnet Boutique, Teranga Resto, Teranga Navette, Teranga Shop, Teranga Livraison, Studio Photo et Teranga File donnent une page ou un QR code à vos clients : ils voient vos photos et vos prix, réservent ou commandent, et vous recevez tout dans l'app.</p></details>
       <details><summary>J'ai deux boutiques ou deux restaurants.</summary><p>Avec Carnet Boutique, vous ajoutez une autre activité avec le même numéro, pour un petit supplément. Pour Teranga Resto, chaque restaurant a son propre abonnement. Écrivez-nous, on vous aide à tout mettre en place.</p></details>
     </div>
   </section>
@@ -655,7 +756,7 @@ footer b{color:var(--ink)}
   </section>
 </main>
 
-<footer><b>Seck Apps</b> · Sénégal · Carnet Boutique · Teranga Resto · Teranga Navette · Studio Photo · Teranga File</footer>
+<footer><b>Seck Apps</b> · Sénégal · Carnet Boutique · Teranga Resto · Teranga Navette · Teranga Shop · Teranga Livraison · Studio Photo · Teranga File</footer>
 
 <div class="sticky"><a class="btn btn-wa" data-msg="Bonjour Seck Apps, je veux essayer une application 7 jours gratuits." href="#">
   <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.6-.1 1.2z"/></svg>
